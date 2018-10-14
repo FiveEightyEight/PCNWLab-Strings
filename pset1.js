@@ -33,6 +33,11 @@ console.log(makeEven('even'))
     @example - getLastChar('taq'); // 'q'
 */
 
+const getLastChar = (str) => {
+    return str.charAt(str.length-1);
+}
+
+console.log(getLastChar('jeX'));
 /* 3
     @func get3rdChar
     @param {string} str
