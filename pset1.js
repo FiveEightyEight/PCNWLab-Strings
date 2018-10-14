@@ -94,7 +94,7 @@ const startsWithVowel = (str) => {
     return false;
 }
 
-console.log(startsWithVowel('jex'));
+console.log(startsWithVowel('jexi'));
 console.log(startsWithVowel('aaron'));
 
 /* 6
@@ -108,6 +108,17 @@ console.log(startsWithVowel('aaron'));
     @example - endsWithVowel('AndI'); // true
 */
 
+const endsWithVowel = (str) => {
+    str = str.toLowerCase();
+
+    if (str.charAt(str.length-1) === 'a' || str.charAt(str.length-1) === 'e' || str.charAt(str.length-1) === 'i' || str.charAt(str.length-1) === 'o' || str.charAt(str.length-1) === 'u'){
+        return true;
+    }
+    return false;
+}
+
+console.log(endsWithVowel('jexi'));
+console.log(endsWithVowel('aaron'));
 
 /* 7
     @func hasVowels
