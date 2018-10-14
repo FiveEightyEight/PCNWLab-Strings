@@ -47,6 +47,15 @@ console.log(getLastChar('jeX'));
     @example - get3rdChar('mo'); // 'not enough characters!'
 */
 
+const get3rdChar = (str) => {
+    if (str.length-1 < 2) {
+        return 'not enough characters!';
+    }
+    return str.charAt(2);
+}
+console.log(get3rdChar('An'));
+console.log(get3rdChar('Jex'));
+
 /* 4
     @func get3rdCharFromEnd
     @param {string} str
