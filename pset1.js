@@ -85,6 +85,18 @@ console.log(get3rdCharFromEnd('box'));
     @example - startsWithVowel('Andy'); // true
 */
 
+const startsWithVowel = (str) => {
+    str = str.toLowerCase();
+
+    if (str.charAt(0) === 'a' || str.charAt(0) === 'e' || str.charAt(0) === 'i' || str.charAt(0) === 'o' || str.charAt(0) === 'u'){
+        return true;
+    }
+    return false;
+}
+
+console.log(startsWithVowel('jex'));
+console.log(startsWithVowel('aaron'));
+
 /* 6
     @func endsWithVowel
     @param {string} str
