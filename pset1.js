@@ -152,6 +152,18 @@ console.log(hasVowels('dfghjkl'));
     @example - hasUpperCase('taq karim'); // false
 */
 
+const hasUpperCase = (str) => {
+
+    if(str !== str.toLowerCase()){
+        return true;
+    }
+    return false;
+}
+
+console.log('~~~~~~~~~~~~~~~')
+console.log(hasUpperCase('TAQ')); // true
+console.log(hasUpperCase('tag')); // false
+
 /* 9
     @func isPalindromic
     @param {string} str
