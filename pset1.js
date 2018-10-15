@@ -131,6 +131,15 @@ console.log(endsWithVowel('aaron'));
     @example - hasVowels('taq karim'); // true
 */
 
+const hasVowels = (str) => {
+    str = str.toLowerCase();
+    if(str.match(/a|e|i|o|u/)){
+        return true;
+    }
+    return false;
+}
+console.log(hasVowels('robert'));
+console.log(hasVowels('dfghjkl'));
 
 /* 8
     @func hasUpperCase
