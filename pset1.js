@@ -213,6 +213,14 @@ console.log(isPalindromic('racecars')); // false
     @example - getInitials('sue RonaN'); // "sr"
 */
 
+const getInitials = (str) => {
+    str = str.toLowerCase();
+    let surNameIndex = str.lastIndexOf(" ")+1;
+    return `${str.charAt(0)}${str.charAt(surNameIndex)}`;
+}
+
+console.log(getInitials('taq karim'));
+console.log(getInitials('John       Smith')); // "js"))
 /* 11
     @func isPerfectStr
     @param {string} str
