@@ -175,6 +175,31 @@ console.log(hasUpperCase('tag')); // false
     @example - hasUpperCase('taq karim'); // false
 */
 
+
+
+const reverseMe = (str) => {
+    if (str === ""){
+        return "";
+    } else {
+    return reverseMe(str.substr(1)) + str.charAt(0);
+    }
+}
+
+const isPalindromic = (str) => {
+    str = str.toLowerCase();
+    let letMe = reverseMe(str);
+    if (letMe !== str){
+        return false;
+    } 
+    return true;
+}
+
+
+console.log('~~~~~~~~~~~~~~~')
+console.log(isPalindromic('abcd'));
+console.log(isPalindromic('racecar')); // true
+console.log(isPalindromic('racecars')); // false
+
 /* 10
     @func getInitials
     @param {string} str
