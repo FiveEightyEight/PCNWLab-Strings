@@ -267,3 +267,12 @@ console.log(isPerfectStr('asdfaeKeccccc')); // true
     @example - capitalLast('hello', 'wrold'); // "helwroldlo"
 */
 
+const strMasher = (str1, str2) => {
+    let nuString = str1.substring(0, (str1.length/2)) + str2 + str1.substring((str1.length/2), str1.length);
+    return nuString;
+}
+
+console.log(strMasher('Robert', 'OOOOOO'));
+console.log(strMasher('hello', 'world'));
+console.log(strMasher('help', 'me'));
+
