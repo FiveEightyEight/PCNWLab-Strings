@@ -236,6 +236,26 @@ console.log(getInitials('John       Smith')); // "js"))
     @example - isPerfectStr('asdfaeKeccccc'); // true
 */
 
+const isPerfectStr = (str) => {
+if (str.length >= 3){
+    if (str.length > 3){
+        // return str.charAt((str.length/2)-1); 
+        return isPerfectStr( str.slice( ( (str.length/2) -1 ), ( (str.length/2) -1 ) +3 )  ) // slice() the center of the string
+    }                                                                                        // return its center to the function
+    if ( hasVowels( str.charAt(0) ) && !hasVowels( str.charAt(1) ) && hasVowels( str.charAt(2) ) && isPalindromic(str)){
+        return true;                                                            // ^^^ str will always be 3 index long 
+    }                                                                           // all fucntions return booleans
+    return false;
+}
+return false;
+}
+
+console.log('~*~*~*~*~*~*~*~*~*~')
+console.log(isPerfectStr('ab')); // false
+console.log(isPerfectStr('aba')); // true
+console.log(isPerfectStr('asdfaeKeccc')); // false
+console.log(isPerfectStr('asdfaeKeccccc')); // true
+
 /* 12
     @func strMasher
     @param {string} str1
